@@ -1,7 +1,7 @@
 .banner1 {
     position: relative;
     width: 100%;
-    height: 900px; /* Ajusta la altura según tus necesidades */
+    height: 900px; 
     background-image: url("../img/banner1.jpg");
     background-size: cover;
     background-position: center;
@@ -13,11 +13,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Color negro con transparencia */
+    background-color: rgba(0, 0, 0, 0.5); 
   }
   
   .titulo1 {
-    padding-top: 300px;
+    padding-top: 200px;
     font-weight: bolder;
     font-size: 90px;
     position: relative;
