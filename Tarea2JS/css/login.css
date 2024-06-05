@@ -8,7 +8,6 @@
 }
 
 
-
 .overlay {
     position: absolute;
     top: 0;
@@ -59,4 +58,6 @@
 
 .btninicio {
     background-color: rgb(224, 132, 2);
+    border: none;
 }
+
