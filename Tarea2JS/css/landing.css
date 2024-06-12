@@ -35,10 +35,25 @@ body {
 .subtitle {
     font-size: 60px; 
     padding-bottom: 20px;
+    color: #02e3ee;
 }
 
 .button-group {
-    margin-top: 30px; /* Margen superior para separar los botones del subtítulo */
+    margin-top: 30px; 
 }
 
 
+.icon-container {
+    padding-top:  30px;
+}
+
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
