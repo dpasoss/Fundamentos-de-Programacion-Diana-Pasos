@@ -1,0 +1,45 @@
+/* Header y Nav */
+
+.logo {
+    max-height: 60px; 
+}
+
+
+.navbar-custom .navbar-brand {
+    color: rgb(224, 132, 2) ; /* Color del texto de la marca */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #06c2cc; /* Color del texto de los enlaces */
+    margin-left: 20px; /* Espaciado entre los enlaces */
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: rgb(224, 132, 2); /* Color del texto al pasar el mouse sobre los enlaces */
+}
+
+
+
+/*estilos para la primera seccion*/
+.custom-section {
+    color: rgb(224, 132, 2); 
+    font-size: 25px; 
+    text-align: justify; 
+    margin-top: 70px; 
+}
+
+.custom-section h2 {
+    color: #06c2cc; 
+    font-weight: bold; 
+    font-size: 50px;
+    margin-bottom: 40px; 
+    margin-top: 50px;
+}
+
+.custom-section p {
+    margin-bottom: 80px;
+    margin-top: 25px; 
+}
