@@ -22,9 +22,12 @@ document.getElementById('btn-login').addEventListener('click', function() {
             icon: 'success',
             title: 'Login Exitoso',
             text: '¡Bienvenido!',
+            showConfirmButton: false,
+            timer: 1700,  // Ajusta el tiempo en milisegundos según sea necesario
+            timerProgressBar: true
         }).then(function() {
             // Redirigir a otra página después del login exitoso
-            window.location.href = 'homepage.html'; // Cambia esto a la URL de la página de inicio
+            window.location.href = 'inicio.html'; // Cambia esto a la URL de la página de inicio
         });
     } else {
         // Login fallido
