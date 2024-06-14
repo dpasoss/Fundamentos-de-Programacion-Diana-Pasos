@@ -43,3 +43,76 @@
     margin-bottom: 80px;
     margin-top: 25px; 
 }
+
+
+
+/* Estilos para la sección inversa */
+.reverse-section {
+    margin-top: 225px;
+    margin-left: 50px;
+}
+
+.reverse-section h2 {
+    color: #06c2cc;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+
+.reverse-section p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.reverse-section .btn {
+    margin-top: 2px;
+    margin-left: 250px;
+}
+
+/* Botón personalizado */
+.custom-btn {
+    background-color: #06c2cc; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 18px; 
+    cursor: pointer; 
+}
+
+.custom-btn:hover {
+    background-color: #6bdfe8; 
+}
+
+
+/*estilos seccion 3*/
+.titulo3  {
+    color: #06c2cc;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.container-fluid5 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+
+
+/* Footer */
+.container-fluid6.fondo1 {
+    background-color: rgba(168, 167, 167, 0.5); /* Color gris transparente de fondo */
+    padding: 20px 0; /* Padding para dar espacio dentro del footer */
+}
+
+.footer-text {
+    font-size: 16px; /* Tamaño más pequeño del texto del footer */
+    color: rgb(73, 69, 69); /* Color del texto */
+    margin: 0; /* Eliminar márgenes */
+    text-align: center; /* Alinear texto al centro */
+}
+
