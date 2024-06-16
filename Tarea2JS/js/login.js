@@ -26,7 +26,7 @@ document.getElementById('btn-login').addEventListener('click', function() {
             timer: 1700,  
             timerProgressBar: true
         }).then(function() {
-            window.location.href = 'inicio.html'; 
+            window.location.href = 'landing.html'; 
         });
     } else {
         // Login fallido

@@ -52,10 +52,10 @@
     margin-top: 70px; 
 }
 
-.custom-section h2 {
+.custom-section h3 {
     color: #06c2cc; 
     font-weight: bold; 
-    font-size: 50px;
+    font-size: 20px;
     margin-bottom: 40px; 
     margin-top: 50px;
 }
@@ -75,7 +75,7 @@
 .reverse-section h2 {
     color: #06c2cc;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 20px;
     margin-bottom: 8px;
     margin-right: 20px;
 }
