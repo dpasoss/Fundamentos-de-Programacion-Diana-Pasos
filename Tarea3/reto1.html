@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 1</title>
+    <link href="favicon.png" rel="icon">
+    <link rel="stylesheet" href="/Tarea3/css/reto1.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Información General</h1>
+        <form id="facturaForm">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="cliente">Cliente:</label>
+                        <input type="text" id="cliente" name="cliente" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="articulo">Artículo Comprado:</label>
+                        <input type="text" id="articulo" name="articulo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="precio">Precio:</label>
+                        <input type="number" id="precio" name="precio" required>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" id="borrar" class="btn-borrar">Borrar</button>
+                        <button type="button" id="facturar">Facturar</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="subtotal">Subtotal:</label>
+                        <input type="text" id="subtotal" name="subtotal" readonly value="₡">
+                    </div>
+                    <div class="form-group">
+                        <label for="iva">IVA (13%):</label>
+                        <input type="text" id="iva" name="iva" readonly value="₡">
+                    </div>
+                    <div class="form-group">
+                        <label for="servicio">Servicio (5%):</label>
+                        <input type="text" id="servicio" name="servicio" readonly value="₡">
+                    </div>
+                    <div class="form-group">
+                        <label for="total">Total a Pagar:</label>
+                        <input type="text" id="total" name="total" readonly value="₡">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" id="correo">Correo</button>
+                        <button type="button" id="imprimir">Imprimir</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="/Tarea3/js/reto1.js"></script>
+</body>
+</html>

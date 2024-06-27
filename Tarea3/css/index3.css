@@ -1,0 +1,73 @@
+body {
+    background-image: url(../img/bluebackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .header {
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+  }
+
+  .header h1 {
+    font-size: 90px;
+    font-family: "Noto Serif", serif;
+    font-weight: lighter;
+  }
+
+  .header h2 {
+    font-weight: lighter;
+    font-size: 40px;
+  }
+
+  #flecha {
+    font-size: 60px; 
+    margin-top: 30px; 
+  }
+/*fin del header*/ 
+
+
+
+/*inicio botones*/ 
+  .buttons-section {
+    padding: 15px;
+
+  }
+  
+  .custom-btn {
+    background-color: rgb(0, 0, 0, 0.3); 
+    color: white; 
+    font-size: 1.25rem; 
+    padding: 30px 20px; 
+    border-radius: 10px; 
+    border: none; 
+    margin-right: 80px;
+  }
+  
+  .custom-btn:hover {
+    background-color:  rgba(241, 241, 241, 0.3); 
+    cursor: pointer;
+    color: rgb(15, 15, 119); 
+  }
+  /*fin de botones*/
+
+
+  /*Inicio footer*/
+  .footer {
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer h2{
+    font-size: 15px;
+    font-weight: lighter;
+  }
