@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2</title>
+    <link href="favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.18/sweetalert2.min.css">
+    <link rel="stylesheet" href="/Tarea3/css/reto2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Conversor de Moneda</h2>
+        <div class="row">
+            <div class="conversion-box">
+                <h3>Convertir de Dólares a Colones</h3>
+                <div class="form-group">
+                    <label for="montoDolares">Monto en Dólares:</label>
+                    <input type="number" id="montoDolares" class="form-control" placeholder="Ingrese el monto en dólares">
+                </div>
+                <div class="form-group">
+                    <label for="tipoCambio">Tipo de Cambio:</label>
+                    <input type="number" id="tipoCambio" class="form-control" placeholder="Ingrese el tipo de cambio">
+                </div>
+                <div class="form-group">
+                    <label for="resultadoDolares">Resultado en Colones:</label>
+                    <p id="resultadoDolares" class="resultado"></p>
+                </div>
+                <button type="button" id="convertir" class="btn btn-primary">Convertir</button>
+                <button type="button" id="limpiarDolares" class="btn btn-secondary limpiar">Limpiar</button>
+            </div>
+            <div class="conversion-box">
+                <h3>Convertir de Colones a Dólares</h3>
+                <div class="form-group">
+                    <label for="montoColones">Monto en Colones:</label>
+                    <input type="number" id="montoColones" class="form-control" placeholder="Ingrese el monto en colones">
+                </div>
+                <div class="form-group">
+                    <label for="tipoCambioInverso">Tipo de Cambio:</label>
+                    <input type="number" id="tipoCambioInverso" class="form-control" placeholder="Ingrese el tipo de cambio">
+                </div>
+                <div class="form-group">
+                    <label for="resultadoColones">Resultado en Dólares:</label>
+                    <p id="resultadoColones" class="resultado"></p>
+                </div>
+                <button type="button" id="convertirInverso" class="btn btn-primary">Convertir</button>
+                <button type="button" id="limpiarColones" class="btn btn-secondary limpiar">Limpiar</button>
+            </div>
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.18/sweetalert2.all.min.js"></script>
+    <script src="/Tarea3/js/reto2.js"></script>
+</body>
+</html>
