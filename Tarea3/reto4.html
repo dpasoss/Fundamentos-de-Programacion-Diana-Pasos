@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 4</title>
+    <link href="favicon.png" rel="icon">
+    <link rel="stylesheet" href="css/reto4.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <section class="container-fluid galeria">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="display-2 pt-5 text-danger">Tipos de tarjetas de crédito BAC</h2>   
+                </div>
+                <p class="text-left pt-5">Les ofrecemos los siguientes productos.</p>
+                <div class="col-12">
+                    <select name="menuOpciones" id="menuOpciones" class="form-select form-select-lg mb-5">
+                        <option value="" class="opcion0">Seleccionar una categoría</option>
+                        <option value="clasica" class="opcion1">CashBack Clásica Mastercard</option>
+                        <option value="dorada" class="opcion2">CashBack Dorada Mastercard</option>
+                        <option value="platino" class="opcion3">CashBack Platino Mastercard</option>
+                        <option value="black" class="opcion4">CashBack Black Mastercard</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" id="infoTarjeta" style="display: none;">
+                <div class="col-md-6" id="descripcionTarjeta"></div>
+                <div class="col-md-6" id="imagenTarjeta"></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/reto4.js"></script>
+</body>
+</html>

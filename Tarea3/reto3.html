@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 3</title>
+    <link href="favicon.png" rel="icon">
+    <link rel="stylesheet" href="css/reto3.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Gimnasios de Costa Rica</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#about">Afiliación</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <img src="img/gymbanner.jpg" alt="Gimnasio" class="hero-image">
+        <div class="combo-container">
+            <label for="url-selector">Elige una locación:</label>
+            <select id="url-selector">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="https://gimnasioscr.com/impulse-fitness-tres-rios-tres-rios/">Tres Ríos</option>
+                <option value="https://gimnasioscr.com/brujas-sport-center-escazu/">Escazú</option>
+                <option value="https://gimnasioscr.com/catharsis-united-fit-box-heredia/">Heredia</option>
+                <option value="https://gimnasioscr.com/gimnasio-del-este-sabanilla/">Sabanilla</option>
+                <option value="https://gimnasioscr.com/fenix-gimnasio-santa-ana-santa-ana/">Santa Ana</option>
+            </select>
+            <button id="go-button">Ir</button>
+        </div>
+    </section>
+    <script src="js/reto3.js"></script>
+</body>
+</html>
