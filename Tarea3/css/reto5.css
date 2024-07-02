@@ -1,0 +1,39 @@
+body {
+    font-size: 22px;
+}
+
+p {
+    font-size: 22px;
+}
+
+header {
+    background-color: #1d57a2;
+    height: 60px;
+}
+
+.inicio {
+    border-bottom: 1px solid #1d57a2;
+}
+
+.logo {
+    padding: 30px 100px;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.logo2 img {
+    width: 70%;
+}
+
+
+.gollo {
+    padding: 80px 100px;
+}
+
+.gollo h1 {
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
