@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(254, 241, 231); /* Color beige caramelo relacionado con cerveza artesanal */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #ba6a00; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
+.navbar h1 {
+    font-size: 30px;
+}
+
+
+.navbar-link:hover{ 
+    color: #a90d1a;
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+    font-weight: bold; 
+    margin-right: 15px; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #8a340d;
+}
+
+
+.map-image {
+    margin-top: 60px; 
+    width: 100%; 
+    max-width: 800px;
+    height: auto;
+}
+
+
+area {
+    cursor: pointer;
+    outline: none; 
+}
