@@ -57,3 +57,20 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer h2 {
+    color: #000;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 15px;
+}
