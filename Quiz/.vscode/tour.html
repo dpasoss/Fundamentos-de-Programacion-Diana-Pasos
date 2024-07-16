@@ -10,55 +10,30 @@
 
     <!--uso del framework AFRAME JS-->
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <link href="css/index4.css" rel="stylesheet">
+    <link href="css/tour.css" rel="stylesheet">
 </head>
 
-
 <body>
-
-
     <header class="container-fluid fondo">
         <h1 class="text-white text-center">Hotel Deluxe</h1>
     </header>
 
-
     <section class="container">
-    
-        <!--carga 2 objetos foto 360---->
-    <a-scene>
-        <a-assets>
-            <!--cargar imagen 360-->
-            <img id="lugar" src="img/hotel360.jpeg" alt="imagen3D">
-            <!---cargar objeto 3D-->
-            <img id="aframe" src="#">
-         </a-assets>
-         <!---propiedades del objeto y la posicion en eje XYZ-->
-         <a-image src="#aframe" position="0 1.5 -2" widht="1.5" height="1.345"></a-image>
-         <!--enlace imagen 360-->
-         <a-sky src="#lugar"></a-sky>
-    </a-scene>
-
+        <div class="scene-container">
+            <a-scene embedded>
+                <a-assets>
+                    <img id="lugar" src="img/hotel360.jpeg" alt="imagen3D">
+                </a-assets>
+                <a-sky src="#lugar"></a-sky>
+            </a-scene>
+        </div>
     </section>
 
-
-
     <footer class="fondo">
-        <h2 class="text-white text-center">Hotel Deluxe</h2>
+        <h2 class="text-white text-center">PROFEFRANK-JAVA SCRIPT 3D</h2>
     </footer>
 
-
-
-
-
-
-
-
-    
-
-    
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
