@@ -1,0 +1,38 @@
+
+/*tamaño inicial foto 360*/
+
+#panorama-container {
+    width: 1300px;
+    height: 700px;
+    background-position: center;
+}
+
+.fondo {
+    background-color: #000000;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+header h1 {
+    font-weight: lighter;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+footer {
+    /*si se quita la posicion fija el pie de pagina dejara de estar al final de la pagina*/
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;   
+}
+
+footer h2 {
+    font-weight: lighter;
+    font-size: 20px;
+}
