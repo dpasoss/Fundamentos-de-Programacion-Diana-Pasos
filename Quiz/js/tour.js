@@ -66,17 +66,22 @@ panorama.add(infospot5);
 var infospot6 = new PANOLENS.Infospot(50, 'img/informacion.png');
 infospot6.position.set(150 ,-64 , -500);
 infospot6.addHoverText('' , -60);
-infospot6.element.innerHTML = '<div style="color:#000; border-radius: 5px; padding: 10px; font-size: 14px; width: 200px;"><audio controls><source src="audios/birds.mp3" type="audio/mpeg"></audio></div>';
+infospot6.element.innerHTML = '<div style="color:#000; border-radius: 5px; padding: 10px; font-size: 14px; width: 600px;"><audio controls><source src="audios/birds.mp3" type="audio/mpeg"></audio></div>';
+
+
 panorama.add(infospot6);
 
 
 
 
-/* ***************** Zona Interacción #7 ***************** */
+/* ***************** Zona Interacción #7 MESA DE NOCHE***************** */
 
-//var infospot3 = new PANOLENS.Infospot(50, 'img/informacion.png');
-//infospot3.position.set(283 ,-261 , -500);
+var infospot7 = new PANOLENS.Infospot(50, 'img/informacion.png');
+infospot7.position.set(-500 ,-359 , 37);
+infospot7.addHoverText('Le ofrecemos un servicio a la habitación de primera clase para asegurar que su estancia sea lo más cómoda y conveniente posible. Ya sea que desee disfrutar de una comida deliciosa en la privacidad de su habitación, necesite artículos adicionales o tenga solicitudes especiales, nuestro equipo de servicio a la habitación está disponible las 24 horas del día para atender todas sus necesidades. Disfrute de una experiencia de hospitalidad personalizada sin tener que salir de la comodidad de su habitación.', -60);
+infospot7.element.innerHTML = '<div style="background-color: rgba(64, 64, 64, 0.8); color:#fff; border-radius: 5px; padding: 10px; font-size: 16px; width: 400px;">Le ofrecemos un servicio a la habitación de primera clase para asegurar que su estancia sea lo más cómoda y conveniente posible. Ya sea que desee disfrutar de una comida deliciosa en la privacidad de su habitación, necesite artículos adicionales o tenga solicitudes especiales, nuestro equipo de servicio a la habitación está disponible las 24 horas del día para atender todas sus necesidades. Disfrute de una experiencia de hospitalidad personalizada sin tener que salir de la comodidad de su habitación.';
 
+panorama.add(infospot7);
 
 
  
