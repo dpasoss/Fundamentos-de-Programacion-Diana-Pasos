@@ -72,8 +72,6 @@ infospot6.element.innerHTML = '<div style="color:#000; border-radius: 5px; paddi
 panorama.add(infospot6);
 
 
-
-
 /* ***************** Zona Interacción #7 MESA DE NOCHE***************** */
 
 var infospot7 = new PANOLENS.Infospot(50, 'img/informacion.png');
