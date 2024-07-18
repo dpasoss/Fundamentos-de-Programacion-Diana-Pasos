@@ -1,43 +1,40 @@
 
-.header-fondo {
-    background-color: #cbcccd; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centrar el contenido */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
 }
+
+
+
+.header-fondo {
+    background-color: #cbcccd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0; 
+}
+
 
 .logo {
-    height: 60px; /* Altura del logo */
-    max-width: 100%; /* Ajuste responsivo */
+    height: 40px; 
+    max-width: 100%; 
 }
-
-
 
 
 #panorama-container {
-    width: 1300px;
-    height: 700px;
-    background-position: center;
+    margin: 0; 
+    padding: 0; 
 }
 
-
-header {
-    width: 100%;
-}
-
-header h1 {
-    font-weight: lighter;
-}
 
 .cursor {
     cursor: pointer;
 }
 
 
-
-
 .footer-fondo {
     background-color: #892020; 
-    padding: 20px; 
+    padding: 10px; 
     text-align: center; 
     position: fixed; 
     width: 100%; 

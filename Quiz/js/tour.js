@@ -25,7 +25,7 @@ panorama.add(infospot1);
  
 /* ***************** Zona Interacción #2 VENTANA***************** */
 var infospot2 = new PANOLENS.Infospot(50, 'img/informacion.png');
-infospot2.position.set(277 ,34 , -500);
+infospot2.position.set(360 ,35 , -500);
 infospot2.addHoverText('Disfruta de una experiencia única en nuestro hotel, donde cada habitación ofrece una vista espectacular que te dejará sin aliento. Desde panorámicas vistas a la ciudad de San José hasta majestuosos paisajes urbanos, cada ventana es un cuadro pintoresco que transformará tu estancia en una experiencia inolvidable. Déjate cautivar por la belleza natural que acompaña cada momento en nuestro exclusivo rincón de confort y lujo', -60);
 infospot2.element.innerHTML = '<div style="background-color: rgba(64, 64, 64, 0.8); color:#fff; border-radius: 5px; padding: 10px; font-size: 16px; width: 400px;">Disfruta de una experiencia única en nuestro hotel, donde cada habitación ofrece una vista espectacular que te dejará sin aliento. Desde panorámicas vistas a la ciudad de San José hasta majestuosos paisajes urbanos, cada ventana es un cuadro pintoresco que transformará tu estancia en una experiencia inolvidable. Déjate cautivar por la belleza natural que acompaña cada momento en nuestro exclusivo rincón de confort y lujo</div>';
  
@@ -63,10 +63,10 @@ panorama.add(infospot5);
 
 /* ***************** Zona Interacción #6 AUDIO ***************** */
 
-var infospot6 = new PANOLENS.Infospot(50, 'img/informacion.png');
+var infospot6 = new PANOLENS.Infospot(80, 'img/informacion.png');
 infospot6.position.set(150 ,-64 , -500);
 infospot6.addHoverText('' , -60);
-infospot6.element.innerHTML = '<div style="color:#000; border-radius: 5px; padding: 10px; font-size: 14px; width: 600px;"><audio controls><source src="audios/birds.mp3" type="audio/mpeg"></audio></div>';
+infospot6.element.innerHTML = '<div style="color:#000; border-radius: 5px; padding: 10px; font-size: 18px; width: 600px;"><audio controls><source src="audios/birds.mp3" type="audio/mpeg"></audio></div>';
 
 
 panorama.add(infospot6);
@@ -89,24 +89,6 @@ panorama.add(infospot7);
 // Agregar la panorámica al visor
 viewer = new PANOLENS.Viewer({ container: container });
 viewer.add(panorama);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
