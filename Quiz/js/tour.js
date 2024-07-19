@@ -7,8 +7,18 @@ container = document.querySelector('#panorama-container');
 // Carga la foto 360
 panorama = new PANOLENS.ImagePanorama('img/hotel.jpeg');
  
+
+
+//agregar las zonas infospot
+panorama.add(infospot1);
+panorama.add(infospot2);
+panorama.add(infospot3);
+panorama.add(infospot4);
+panorama.add(infospot5);
+panorama.add(infospot6);
+panorama.add(infospot7);
  
- 
+
 /* ***************** ********************* ***************** */
 /* ***************** Zona de interacciones ***************** */
 /* ***************** ********************* ***************** */
@@ -23,13 +33,17 @@ infospot1.element.innerHTML = '<div style="background-color: rgba(64, 64, 64, 0.
  
 panorama.add(infospot1);
  
+
+
 /* ***************** Zona Interacción #2 VENTANA***************** */
 var infospot2 = new PANOLENS.Infospot(50, 'img/informacion.png');
-infospot2.position.set(360 ,35 , -500);
+infospot2.position.set(359 ,45 , -500);
 infospot2.addHoverText('Disfruta de una experiencia única en nuestro hotel, donde cada habitación ofrece una vista espectacular que te dejará sin aliento. Desde panorámicas vistas a la ciudad de San José hasta majestuosos paisajes urbanos, cada ventana es un cuadro pintoresco que transformará tu estancia en una experiencia inolvidable. Déjate cautivar por la belleza natural que acompaña cada momento en nuestro exclusivo rincón de confort y lujo', -60);
 infospot2.element.innerHTML = '<div style="background-color: rgba(64, 64, 64, 0.8); color:#fff; border-radius: 5px; padding: 10px; font-size: 16px; width: 400px;">Disfruta de una experiencia única en nuestro hotel, donde cada habitación ofrece una vista espectacular que te dejará sin aliento. Desde panorámicas vistas a la ciudad de San José hasta majestuosos paisajes urbanos, cada ventana es un cuadro pintoresco que transformará tu estancia en una experiencia inolvidable. Déjate cautivar por la belleza natural que acompaña cada momento en nuestro exclusivo rincón de confort y lujo</div>';
  
 panorama.add(infospot2);
+
+
  
 /* ***************** Zona Interacción #3 ESCRITORIO ***************** */
 var infospot3 = new PANOLENS.Infospot(50, 'img/informacion.png');
@@ -88,12 +102,3 @@ panorama.add(infospot7);
 viewer = new PANOLENS.Viewer({ container: container });
 viewer.add(panorama);
 
-
-
-
-
-
-
-
-
-viewer.add(panorama);
