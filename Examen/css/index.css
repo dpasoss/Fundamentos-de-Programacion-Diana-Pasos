@@ -135,3 +135,44 @@ p {
 .custom-section img {
     max-width: 100%; 
 }
+
+
+/************ TESTIMONIAL  ***************/
+/* Estilos generales para la sección de testimonios */
+.testimonials_container {
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.testimonials {
+    display: flex; /* Usar flexbox para organizar los items horizontalmente */
+    overflow-x: auto; /* Hacer que el contenedor sea desplazable horizontalmente */
+    scroll-snap-type: x mandatory; /* Hacer que los elementos se alineen cuando se detienen al hacer scroll */
+}
+
+.item {
+    flex: 0 0 auto; /* Evita que los items se redimensionen y mantiene su tamaño */
+    margin: 0 15px; /* Espaciado horizontal entre los items */
+    scroll-snap-align: center; /* Alinear los items al centro cuando se detienen al hacer scroll */
+    text-align: center; /* Centrar el texto */
+    min-width: 300px; /* Ancho mínimo para cada item */
+}
+
+.item img {
+    width: 150px; /* O usa un porcentaje, como 50% */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Bordes redondeados para las imágenes */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+.titulos {
+    font-size: 2rem; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.objetivo {
+    font-size: 1rem; /* Tamaño de fuente del párrafo */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+}
+
