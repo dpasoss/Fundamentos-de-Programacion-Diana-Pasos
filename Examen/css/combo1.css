@@ -97,3 +97,19 @@
 
 
 
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c2cccc; 
+    color: #fff; 
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1000; 
+    font-size: 14px;
+}
+
+
