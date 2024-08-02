@@ -63,7 +63,7 @@
 /********************************************************FIN Hero section***********************************************/
 
 .titulo3 {
-    margin-top: 10px;
+    margin-top: 40px;
     font-size: 3.2rem; 
     font-weight: bold; 
     font-family: "Jost", sans-serif;
@@ -73,10 +73,10 @@
 
 
 h5 {
-    font-size: 1.8rem; /* Tamaño del subtítulo */
+    font-size: 1.8rem; 
     font-family: "Jost", sans-serif;
-    font-weight: 600; /* Semi-negrita */
-    color: #e99034; /* Color del subtítulo */
+    font-weight: 600; 
+    color: #e99034; 
     margin-top: 20px; /* Espaciado superior */
     margin-bottom: 10px; /* Espaciado inferior */
 }
