@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -44,12 +46,21 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Nosotros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                              Servicios
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                              <li><a class="dropdown-item" href="combo1.html">Tratamientos</a></li>
+                              <li><a class="dropdown-item" href="combo2.html">Cotice con nosotros</a></li>
+                          </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="btn" href="#" role="button">Agendar Cita</a>
+                      </li>
                     </ul>
                 </div>
             </div>
@@ -81,7 +92,7 @@
             </div>
             <div class="col-sm-6 col-md-6 col-lg-4">
               <div class="text-center">
-                <img src="img/w.11.jpg" alt="imagen2" class="img-fluid shadow">
+                <img src="img/w11.jpg" alt="imagen2" class="img-fluid shadow">
                 <h5 class="pt-4">Odontología Restauradora</h5>
                 <hr>
               </div>
@@ -141,6 +152,11 @@
             </div>
           </div>
         </div>
+
+        <div class="more-info-container mt-4 text-center">
+          <a href="combo1.html" target="_blank" class="btn btn-info">Más Información</a>
+      </div>
+
       </section>
 
 
@@ -311,6 +327,9 @@
       }
   })
 </script>
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 
 

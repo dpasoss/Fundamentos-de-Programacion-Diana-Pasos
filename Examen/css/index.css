@@ -60,6 +60,26 @@
     }
 }
 
+
+.navbar-nav .nav-item .btn {
+  margin-top: 5px;
+  border-color: #06c2cc;
+  color: #06c2cc;
+  margin-left: 15px; 
+  padding: 0.5rem 1rem; 
+  border-radius: 0.25rem;
+  margin-right: 40px;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+}
+
+.navbar-nav .nav-item .btn:hover {
+  background-color: #e99034;
+  color: #fff;
+  border: #e99034;
+  transform: scale(1.05); 
+}
+
 /********************************************************FIN Hero section***********************************************/
 
 .titulo3 {
@@ -90,6 +110,36 @@ h5 {
 p {
     font-family: "Jost", sans-serif;
 }
+
+.more-info-container {
+  text-align: center;
+}
+
+.more-info-container .btn {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-family: "Jost", sans-serif;
+  color: #fff;
+  background-color: #06c2cc; 
+  border: 2px solid #06c2cc; 
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none; 
+}
+
+.more-info-container .btn:hover {
+  background-color: #e99034; 
+  border-color: #e99034; 
+  cursor: pointer;
+  transform: scale(1.05); 
+}
+
+.more-info-container .btn:focus {
+  outline: none; 
+  box-shadow: 0 0 0 2px rgba(23, 162, 184, 0.5); 
+}
+
 
 /***********************************************************************************************************************/
 

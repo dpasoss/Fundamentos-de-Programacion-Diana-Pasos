@@ -1,0 +1,126 @@
+.navbar {
+    background-color: rgba(84, 203, 208, 1); /* #54cbd0 */
+}
+
+.navbar-brand {
+    color: #fff !important; 
+    font-weight: bold;
+    font-family: "Jost", sans-serif;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; 
+    margin-right: 35px; 
+    font-size: 1.5rem;
+    font-family: "Jost", sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e99034 !important;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+/*******************************FIN del Nav**************************************/
+
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Imagen del banner */
+img.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los labels */
+form label {
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para los selects */
+form select.form-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+form select.form-select:focus {
+    border-color: #06c2cc;
+    outline: none;
+}
+
+
+form .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+form .btn-primary {
+    background-color: #06c2cc;
+    color: white;
+}
+
+form .btn-primary:hover {
+    background-color: #04a6b4;
+}
+
+form .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+form .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+
+form .pt-3 p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form .pt-3 output {
+    font-size: 1.5rem;
+    color: #06c2cc;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+
+.pt-3 {
+    padding-top: 1rem;
+}
