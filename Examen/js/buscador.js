@@ -1,65 +1,112 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const buscadorForm = document.getElementById('buscadorForm');
-    const palabraInput = document.getElementById('palabra');
-    const resultadoContainer = document.getElementById('resultado');
+'use strict';
 
-    buscadorForm.addEventListener('submit', function(event) {
-        event.preventDefault();
+function searchClinic() {
 
-        const palabra = palabraInput.value.trim();
+    let searchInput = document.getElementById("searchInput").value.toLowerCase();
 
-        // Validación para verificar si la palabra está vacía
-        if (palabra.length === " ") {
-            Swal.fire({
-                icon: 'error',
-                title: 'Error',
-                text: 'Por favor ingrese una palabra'
-            });
-        } else if (!isNaN(palabra)) { // Verifica si la palabra ingresada es un número
-            Swal.fire({
-                icon: 'error',
-                title: 'Búsqueda Inválida',
-                text: 'No se permite la búsqueda por números. Por favor ingrese un término válido.'
-            });
-        } else {
-            mostrarInformacion(palabra);
-        }
-    });
+    let oesteClinic = ["Escazu", "Santa Ana", "Lindora", "Ciudad Colon", "Sabana"];
 
-    function mostrarInformacion(palabra) {
-        const glossary = [
-            { term: 'Ortodoncia', definition: 'Tratamiento para corregir los dientes y mandíbulas desalineadas.' },
-            { term: 'Carillas', definition: 'Finas láminas de porcelana o resina que se colocan en la superficie de los dientes para mejorar su apariencia.' },
-            { term: 'Implantes', definition: 'Raíces dentales artificiales que se colocan en el hueso maxilar para soportar dientes artificiales.' },
-            { term: 'Endodoncia', definition: 'Tratamiento de conductos radiculares para salvar un diente dañado o infectado.' },
-            { term: 'Periodoncia', definition: 'Especialidad que se ocupa de las encías y el hueso que sostiene los dientes.' }
-        ];
+    let esteClinic = ["Curridabat", "Sabanilla", "Barrio Escalante"];
 
-        const resultados = glossary.filter(entry =>
-            entry.term.toLowerCase().includes(palabra.toLowerCase()) ||
-            entry.definition.toLowerCase().includes(palabra.toLowerCase())
-        );
+    let storeImages = {
+        "escazu": "img/s1.jpg",
+        "santa ana": "img/s2.jpg",
+        "lindora": "img/s3.jpg",
+        "ciudad colon": "img/s4.jpg",
+        "sabana": "img/s5.jpg",
+        "curridabat": "img/s6.jpg",
+        "sabanilla": "img/s7.jpg",
+        "barrio escalante": "img/s8.jpg",
+    };
 
-        if (resultados.length > 0) {
-            resultadoContainer.innerHTML = resultados.map(entry =>
-                `<div>
-                    <h3>${entry.term}</h3>
-                    <p>${entry.definition}</p>
-                </div>`
-            ).join('');
-        } else {
-            resultadoContainer.innerHTML = '<p>No se encontraron resultados.</p>';
+    let cityTexts = {
+        "escazu": "Sede Escazú le atiende en un horario de L-V de 9:00am a 7:00pm y Sábados de 9:00am a 2:00pm, <br> <br>Teléfono: 2230-9800 <br> <br>Dirección: De multiplaza de Escazú 300mts oeste, 100 norte, centro comercial Escazú. ",
+
+        "santa ana": "Sede Ana le atiende en un horario de L-V de 9:00am a 7:00pm y Sábados de 9:00am a 2:00pm, <br> <br> Teléfono: 2230-9900 <br> <br> Dirección: De la Cruz Roja de Santa Ana, 500mts oeste, 200norte y 25 este, contiguo al Vindi.",
+
+        "lindora": "Sede Lindora le atiende en un horario de L-V de 9:00am a 7:00pm y Sábados de 9:00am a 2:00pm, <br> <br> Teléfono: 2230-9700 <br> <br> Dirección: Del cruce de Lindora, 600m al oeste, contiguo al KFC.",
+
+        "ciudad colon": "Sede Ciudad Colón le atiende en un horario de L-V de 9:00am a 7:00pm y Sábados de 9:00am a 2:00pm, <br> <br> Teléfono: 2230-9600 <br> <br> Dirección: Del Parque de Ciudad Colón, 200m al este.",
+
+        "sabana": "Sede la Sabana le atiende en un horario de L-V de 9:00am a 7:00pm y Sábados de 9:00am a 2:00pm, <br> <br> Teléfono: 2295-9700 <br> <br> Dirección: De la agencia Datsun 120mts al oeste contiguo al Teatro Arnoldo Herrera.",
+
+        "curridabat": "Sede Curridabat le atiende en un horario de L-V de 9:00am a 7:00pm y Sábados de 9:00am a 2:00pm, <br> <br> Teléfono: 2295-9500  <br> <br> Dirección: Del Colegio Sek, 300m suroeste, contiguo al Macdonalds, Guayabos.",
+
+        "sabanilla": "Sede Sabanilla le atiende en un horario de L-V de 9:00am a 7:00pm y Sábados de 9:00am a 2:00pm, <br> <br> Teléfono: 2287-9500 <br> <br> Dirección: Centro comercial el Cristo, loca 32",
+
+        "barrio escalante": "Sede Sabanilla le atiende en un horario de L-V de 9:00am a 7:00pm y Sábados de 9:00am a 2:00pm, <br> <br> Teléfono: 2287-9500  <br> <br> Dirección: Del Parque Fracia, 300m al oeste. "
+    };
+
+    let filteredClinic = [];
+
+    let allClinic = [...oesteClinic, ...esteClinic];
+
+    if (searchInput === "") {
+        swal.fire({
+            icon: "error",
+            title: "Verificar la entrada de datos",
+            confirmButtonText: "Ingrese el nombre de una ciudad",
+            confirmButtonColor: "#0063be",
+        });
+        return;
+    }
+
+    for (let i = 0; i < allClinic.length; i++) {
+        if (allClinic[i].toLowerCase().includes(searchInput)) {
+            // si hay coincidencia, asigna la tienda actual al arreglo filteredClinic
+            filteredClinic = [allClinic[i]];
+            // termina el bucle, ya que se encontró una coincidencia para que no siga iteractuando y consumiendo memoria
+            break;
         }
     }
 
-    function borrar() {
-        palabraInput.value = '';
-        resultadoContainer.innerHTML = '';
+    if (filteredClinic.length === 0) {
+        if (searchInput === "oeste") {
+            filteredClinic = oesteClinic;
+        } else if (searchInput === "escazu") {
+            filteredClinic = oesteClinic;
+        } else if (searchInput === "santa ana") {
+            filteredClinic = oesteClinic;
+        } else if (searchInput === "lindora") {
+            filteredClinic = oesteClinic;
+        } else if (searchInput === "ciudad colon") {
+            filteredClinic = oesteClinic;
+        }
     }
 
-    // Asegúrate de que el botón de borrar no recargue la página
-    document.querySelector('button[onclick="borrar()"]').addEventListener('click', function(event) {
-        event.preventDefault();
-        borrar();
-    });
-});
+    displayResults(filteredClinic, storeImages, cityTexts);
+}
+
+function displayResults(clinic, storeImages, cityTexts) {
+    let resultsContainer = document.getElementById("pResult");
+    resultsContainer.innerHTML = "";
+
+    if (clinic.length === 0) {
+        resultsContainer.innerHTML = "<p>No se encontraron tiendas para la ubicación escrita.</p>";
+    } else {
+        for (let i = 0; i < clinic.length; i++) {
+            let cityName = clinic[i].toLowerCase();
+            let imageSrc = storeImages[cityName] || "ruta_por_defecto.jpg";
+            let cityText = cityTexts[cityName] || "Información no disponible.";
+
+            let card = document.createElement("div");
+            card.className = "card mb-3";
+            card.style.maxWidth = "100%";
+            card.innerHTML = `
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="${imageSrc}" class="img-fluid rounded-start" alt="Clínica ${clinic[i]}">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Clínica ${clinic[i]}</h5>
+                            <p class="card-text">${cityText}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            resultsContainer.appendChild(card);
+        }
+    }
+}
