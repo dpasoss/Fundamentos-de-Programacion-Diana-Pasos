@@ -170,8 +170,16 @@
                     <p>Nuestro objetivo como dentistas familiares es establecer conexiones de por vida con nuestros pacientes. Nos esforzamos por crear sonrisas saludables y cambiar su forma de pensar acerca de ver al dentista.
                         <br>En nuestra práctica dental, nos dedicamos a prevenir, diagnosticar y tratar problemas de salud bucal. Priorizamos su comodidad, utilizamos la tecnología dental más nueva y brindamos una atención transparente al paciente.
                         <br>En Dentisalud, recibirá servicios dentales integrales y sin prejuicios que son excepcionales y asequibles.</p>
-                    <button class="btn custom-btn">Agendar una cita</button>
-                </div>
+                      <button id="boton" onclick="ejecutar('video','youtube')" class="cursor">Nuestras Instalaciones</button>
+                        <div id="video" class="lightbox" style="display: none;" onclick="ocultar('video', 'youtube')"> 
+                          <div class="lightbox-content">
+                            <button onclick="ocultar('video', 'youtube')" class="lightbox-close cursor"> X </button>
+                              <div class="video-container">
+                                <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/OfpYDbGXrco?si=5Dciuq0GzHZH-JdZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                 <div class="col-md-6 order-md-1">
                     <img id="myImg" src="img/floss.jpg" class="img-fluid rounded shadow">
 
@@ -334,6 +342,8 @@
  <!-- lightbox fotografico -->
  <script src="js/lightbox.js "></script>
 
+ <!-- lightbox video -->
+ <script src="js/lightbox1.js "></script>
 
 
 
