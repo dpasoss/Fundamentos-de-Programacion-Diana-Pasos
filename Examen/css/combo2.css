@@ -124,3 +124,72 @@ form .pt-3 output {
 .pt-3 {
     padding-top: 1rem;
 }
+
+
+
+/******************************************************/
+
+ul.tab {
+    list-style-type: none;
+    margin: 70px 0 0 0;  
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(84, 203, 208, 0.6);
+    border-bottom: 2px solid #04a6b4;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+}
+
+ul.tab li {
+    display: inline-block;
+}
+
+ul.tab li button {
+    display: inline-block;
+    background-color: inherit;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ul.tab li button:hover {
+    background-color: #feb984;
+    color: #000;
+}
+
+ul.tab li button.active {
+    background-color: #ccc;
+    color: #000;
+    border-bottom: 2px solid #04a6b4;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-top: none;
+    animation: fadeEffect 0.5s;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+}
+
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.tabcontent .img-fluid {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Pago de Paquetes</title>
+    <title>Cotice su procedimiento</title>
     
     <link rel="icon" href="favicondentisalud.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> <!--Librería de iconos-->
@@ -103,6 +103,47 @@
 
 
 
+<!-- pestañas -->
+
+<ul class="tab">
+    <li><button class="tablinks" onclick="opciones(event, 'Seguros')">Seguros</button></li>
+    <li><button class="tablinks" onclick="opciones(event, 'Planes')">Planes de pago</button></li>
+    <li><button class="tablinks" onclick="opciones(event, 'Descuentos')">Descuentos</button></li>
+    <li><button class="tablinks" onclick="opciones(event, 'Familia')">Planes familiares</button></li>
+    <li><button class="tablinks" onclick="opciones(event, 'Pagos')">Métodos de pago</button></li>
+</ul>
+
+<!-- Contenido de las pestañas -->
+<div id="Seguros" class="tabcontent">
+    <h2>Seguros Empresariales</h2>
+    <p>Dentisalud está afilidiado a diversos seguros empresariales entre ellos Medismart, Paligmed, Seguro Bac, INS, y ASSA.</p>
+    <img src="img/seguro.jpg" alt="seguro" class="img-fluid">
+</div>
+
+<div id="Planes" class="tabcontent">
+    <h2>Planes de pago</h2>
+    <p>Contamos con diversos planes de pago, para ajustarnos a tus necesidades, consulte en recepción sobre este beneficio.</p>
+    <img src="img/planes.jpg" alt="planes" class="img-fluid">
+</div>
+
+<div id="Descuentos" class="tabcontent">
+    <h2>Descuentos tasa cero</h2>
+    <p>Dentisalud y BAC le ofrecen tasa cero para cualquiera de nuestros procedimientos</p>
+    <img src="img/tasa0.png" alt="tasacero" class="img-fluid">
+</div>
+
+<div id="Familia" class="tabcontent">
+    <h2>Planes familiares</h2>
+    <p>Dentisalud ama la familia y la cuida, tenemos diversos planes familiares con grandes descuentos y beneficios.</p>
+    <img src="img/familia.jpg" alt="familia" class="img-fluid">
+</div>
+
+<div id="Pagos" class="tabcontent">
+    <h2>Métodos de pago</h2>
+    <p>Contamos con diversos métodos de pago, transferencia, SINPE móvil, efectivo, o cualquier tarjeta de débito o crédito.</p>
+    <img src="img/metodo.jpg" alt="metodo" class="img-fluid">
+</div>
+
 
 
 
@@ -110,6 +151,7 @@
 
 
 <script src="js/combo2.js"></script>
+<script src="js/pestanas.js"></script>
 
 
 

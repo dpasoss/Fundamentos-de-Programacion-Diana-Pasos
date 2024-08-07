@@ -502,7 +502,7 @@ p {
   cursor: pointer;
 }
 
-/* Botón ver video */
+
 #boton {
   background-color: #e99034;
   border: none;
@@ -528,8 +528,8 @@ p {
 
 .lightbox-container {
   position: relative;
-  width: 60%; /* Ajusta el tamaño del lightbox para que sea más pequeño */
-  max-width: 400px; /* Tamaño máximo más pequeño */
+  width: 60%; 
+  max-width: 400px; 
   background-color: #fff;
   padding: 10px;
   border-radius: 8px;
