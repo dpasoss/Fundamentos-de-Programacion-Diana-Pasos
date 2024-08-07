@@ -54,20 +54,20 @@ h1 {
 
 
 .input-group {
-    display: flex; /* Alinea el input y el botón horizontalmente */
+    display: flex; 
     max-width: 600px;
-    margin: 0 auto; /* Centramos el contenedor */
+    margin: 0 auto; 
     border-radius: 8px;
-    overflow: hidden; /* Asegura que el contenido no se desborde del contenedor */
+    overflow: hidden; 
 }
 
 .searchInput {
     font-size: 1rem;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px; /* Borde redondeado solo a la izquierda */
-    flex: 1; /* Toma todo el espacio disponible */
-    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+    border-radius: 4px 0 0 4px; 
+    flex: 1; 
+    box-sizing: border-box;
 }
 
 .searchInput:focus {

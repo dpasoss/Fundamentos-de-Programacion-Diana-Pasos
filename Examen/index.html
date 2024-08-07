@@ -173,7 +173,13 @@
                     <button class="btn custom-btn">Agendar una cita</button>
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <img src="img/floss.jpg" class="img-fluid rounded shadow" alt="Imagen de Servicios">
+                    <img id="myImg" src="img/floss.jpg" class="img-fluid rounded shadow">
+
+                    <div id="modal" class="modal">
+                      <div class="close">&times;</div>
+                      <img class="modal-content" id="img">
+                      <div id="caption"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -248,35 +254,29 @@
 </section>
 
 
-
-<!-- SECCIÓN NUESTROS DENTISTAS -->
-<section class="nuestros-dentistas">
-  <div class="container">
-    <h2 class="text-center">Nuestros Dentistas</h2>
-    <div class="dentistas-grid">
-      <div class="dentista-item">
-        <img src="img/dentist1.jpg" alt="Dr. Juan Pérez">
-        <h3>Dra. Paula Mora</h3>
-        <p>Especialista en Ortodoncia</p>
+<div class="container my-5">
+  <h1 id="dentistas">Nuestros Dentistas</h1>
+  <div class="photo-carousel owl-carousel">
+      
+      <div class="photo-item">
+          <img src="img/dentist1.jpg" class="rounded float-start" alt="Foto 1">
+          <div class="caption">Dra. Paula Mora</div>
       </div>
-      <div class="dentista-item">
-        <img src="img/dentist4.jpg" alt="Dr. Aguirre">
-        <h3>Dr. Camilo Vargas </h3>
-        <p>Especialista en Endodoncia</p>
+      <div class="photo-item">
+          <img src="img/dentist2.jpg" class="rounded float-start" alt="Foto 2">
+          <div class="caption">Dr. Camilo Vargas</div>
       </div>
-      <div class="dentista-item">
-        <img src="img/dentist3.jpg" alt="Dr. Carlos Martínez">
-        <h3>Dra. Ana Gómez</h3>
-        <p>Especialista en Periodoncia</p>
+      <div class="photo-item">
+          <img src="img/dentist3.jpg" class="rounded float-start" alt="Foto 3">
+          <div class="caption">Dra. Ana Gómez</div>
       </div>
-      <div class="dentista-item">
-        <img src="img/dentist2.jpg" alt="Dra. Ana Gómez">
-        <h3>Dr. Juan Pablo Aguirre </h3>
-        <p>Especialista en Cirugía Oral</p>
+      <div class="photo-item">
+          <img src="img/dentist4.jpg" class="rounded float-start" alt="Foto 4">
+          <div class="caption">Dr. Juan Pablo Aguirre</div>
       </div>
-    </div>
   </div>
-</section>
+</div>
+
 
 
 
@@ -325,8 +325,18 @@
               items: 3
           }
       }
-  })
+
+  });
 </script>
+
+
+
+ <!-- lightbox fotografico -->
+ <script src="js/lightbox.js "></script>
+
+
+
+
 
 <!-- Bootstrap Bundle JS (incluye Popper) -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

@@ -364,6 +364,143 @@ p {
   
   /********************************************************************************/
 
+
+#dentistas {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Jost", sans-serif;
+  color: #06c2cc;
+}
+
+
+.photo-carousel {
+  position: relative;
+}
+
+
+.photo-item {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(25, 192, 230, 0.7); 
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+
+
+
+
+/******************************************************************/
+
+/* estilo de la imagen utilizada para activar el modal */
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(87, 247, 247, 0.4);
+
+}
+
+
+
+.modal-content {
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  width: 70%;
+}
+
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+      transform: scale(0)
+  }
+  to {
+      transform: scale(1)
+  }
+}
+
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: 35px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: #03988e;
+}
+
+.close:hover,
+.close:focus {
+  color: rgba(231, 176, 66, 0.87);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
   footer {
     background-color: #727272;
     color: #fff;
