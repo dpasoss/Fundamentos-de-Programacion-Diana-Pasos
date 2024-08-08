@@ -38,7 +38,7 @@ function init() {
                         html: '<iframe src="https://lottie.host/embed/cbc155f2-6fc7-4962-ac0a-920e6cac48c2/IkVPf95omc.json"></iframe> <br><br><p>Gracias por contactarnos!</p>',
 
                         showConfirmButton: false,
-                        timer: 2500,
+                        timer: 5500,
                         didOpen: () => {
                             Swal.getIcon().style.webkitAnimation = 'rotate 2s linear infinite';
                             Swal.getIcon().style.animation = 'rotate 2s linear infinite';

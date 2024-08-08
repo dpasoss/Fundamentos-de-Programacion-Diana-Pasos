@@ -101,6 +101,14 @@ document.getElementById('btnCalcular').addEventListener('click', function() {
     }
 
     resultado.textContent = `₡${precio.toLocaleString()}`;
+
+    // Mostrar alerta de cálculo exitoso con SweetAlert
+    Swal.fire({
+        icon: 'success',
+        title: 'Cálculo Exitoso',
+        text: `El precio calculado es: ₡${precio.toLocaleString()}`,
+        confirmButtonText: 'OK'
+    });
 });
 
 function btnLimpiar() {

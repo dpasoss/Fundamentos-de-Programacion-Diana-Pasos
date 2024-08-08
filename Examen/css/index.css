@@ -51,8 +51,8 @@
 
 .navbar-nav .nav-item .btn {
   margin-top: 5px;
-  border-color: #06c2cc;
-  color: #06c2cc;
+  border-color: #fff;
+  color: #fff;
   margin-left: 15px; 
   padding: 0.5rem 1rem; 
   border-radius: 0.25rem;
@@ -499,7 +499,15 @@ p {
   display: inline-block;
   font-size: 20px;
   margin: 0;
+  border-radius: 4px;
 }
+
+
+#boton:hover {
+  background-color: #06c2cc; /* Color de fondo al hacer hover */
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño del botón al hacer hover */
+}
+
 
 .lightbox {
   display: none;
@@ -791,12 +799,6 @@ input:checked + .slider:before {
   font-size: 1.2rem;
   color: #333;
 }
-
-
-
-
-
-
 
 
 
