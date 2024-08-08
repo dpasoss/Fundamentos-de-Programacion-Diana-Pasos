@@ -427,6 +427,29 @@
 
 
 
+ <!-- programacion ANIMACION2 -->
+ <script>
+  //selecciona un elemento del DOM con la clase CSS "animacion2" y lo almacena en la variable anima.
+  let anima = document.querySelector(".animacion2");
+  //carga la animación utilizando la función loadAnimation de la biblioteca Bodymovin
+  let animation = bodymovin.loadAnimation({
+      //es el contenedor donde se muestra la animación, que en este caso es el elemento llamado anima
+      container: anima,
+      path: "https://lottie.host/b4feae1f-3875-4d0b-a9fa-1228e96a7ffd/xQzxUFn1FX.json",
+      renderer: "svg",
+      loop: false,
+      autoplay: false,
+
+  });
+  //en la funcion click se llama al metodo playSegments() en la animación,
+  //este metodo reproduce la animacion desde el fotograma 0 hasta el fotograma 150, y el segundo argumento (true) indica si la animacion debe reproducirse en bucle.
+  anima.addEventListener("click", function (){
+      animation.playSegments([0,150], true);
+  })
+</script>
+
+
+
  <!-- lightbox fotografico -->
  <script src="js/lightbox.js "></script>
 
@@ -449,6 +472,13 @@
 
   <!---Sweet Alert library-->
  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+ <!-- interactividad Lottie JS-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+ <!-- libreria Lottie JS-->
+ <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
 
 
  <!-- Bootstrap Bundle JS (incluye Popper) -->

@@ -20,7 +20,6 @@ function init() {
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Debe llenar todos los campos',
-                footer: '<a href>Why do I have this issue?</a>'
             });
         } else if (!expressionEmail.test(email.value)) {
             Swal.fire({
@@ -34,10 +33,12 @@ function init() {
                     console.log('SUCCESS!', response.status, response.text);
                     Swal.fire({
                         title: 'Enviado con éxito!',
-                        text: 'Gracias por contactarnos.',
-                        icon: 'success',
                         showConfirmButton: false,
-                        timer: 1500,
+                        timer: 3000,
+                        html: '<iframe src="https://lottie.host/embed/cbc155f2-6fc7-4962-ac0a-920e6cac48c2/IkVPf95omc.json"></iframe> <br><br><p>Gracias por contactarnos!</p>',
+
+                        showConfirmButton: false,
+                        timer: 2500,
                         didOpen: () => {
                             Swal.getIcon().style.webkitAnimation = 'rotate 2s linear infinite';
                             Swal.getIcon().style.animation = 'rotate 2s linear infinite';
