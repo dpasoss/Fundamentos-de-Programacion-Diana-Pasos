@@ -692,9 +692,51 @@ p {
 }
 
 
+/*********************************************************/
+/*contador*/
+.ftco-counter {
+  background-color: #f8f9fa; 
+  color: #2c3e50;
+  padding: 50px 0; 
+}
 
+.ftco-counter .titulos {
+  font-size: 24px; 
+  color: #e99034; 
+  margin-bottom: 30px; 
+  font-family: "Jost", sans-serif;
+}
 
+.counter-wrap {
+  margin-bottom: 20px;
+}
 
+.block-18 {
+  background: white; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+  padding: 20px; 
+  border-radius: 10px; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.block-18:hover {
+  transform: translateY(-5px); 
+}
+
+.block-18 .text {
+  margin-bottom: 10px; 
+}
+
+.block-18 .number {
+  font-size: 36px; 
+  font-family: "Jost", sans-serif;
+}
+
+.block-18 h5 {
+  font-size: 16px; 
+  color: #06c2cc;
+  font-family: "Jost", sans-serif;
+}
 
 
 
