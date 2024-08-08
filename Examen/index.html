@@ -248,6 +248,8 @@
 
 
 
+
+<!-- Banner parallax -->
 <section class="bannerparallax">
   <div class="container">
       <div class="row">
@@ -262,6 +264,8 @@
 </section>
 
 
+
+<!-- Tira fotográfica-->
 <div class="container my-5">
   <h1 id="dentistas">Nuestros Dentistas</h1>
   <div class="photo-carousel owl-carousel">
@@ -287,6 +291,90 @@
 
 
 
+<!-- Formulario Contacto-->
+<section class="sectionForm d-flex justify-content-center align-items-center py-4">
+  <div class="containerForm">
+      <h2 class="text-center tituloSeccion5">Contáctenos</h2>
+
+      
+      <form id="form">
+          <div class="formRow">
+              <div class="colForm">
+                  <div class="inputBox">
+                      <input id="nombreTxt" type="text" name="name" required="required">
+                      <span class="text">Nombre</span>
+                      <span class="line"></span>
+                  </div>
+              </div>
+
+              <div class="colForm">
+                  <div class="inputBox">
+                      <input id="apellidoTxt" type="text" name="lastname" required="required">
+                      <span class="text">Apellido</span>
+                      <span class="line"></span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="formRow">
+              <div class="colForm">
+                  <div class="inputBox">
+                      <input id="emailTxt" type="text" name="email" required="required">
+                      <span class="text">Correo</span>
+                      <span class="line"></span>
+                  </div>
+              </div>
+
+              <div class="colForm">
+                  <div class="inputBox">
+                      <input id="numberTxt" type="number" name="phone" required="required">
+                      <span class="text">Teléfono</span>
+                      <span class="line"></span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="formRow">
+              <div class="colForm">
+                  <div class="inputBox textarea">
+                      <textarea id="mensajeTxt" name="message" required="required"></textarea>
+                      <span class="text">Mensaje</span>
+                      <span class="line"></span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="formRow">
+              <div class="colForm">
+
+                  <!-- resultado del mensaje enviado JS -->
+                  <p id="mensajeAlert"></p>
+
+                  <!-- boton enviar  -->
+                  <input id="btnSend" type="submit" value="Enviar">
+              </div>
+          </div>
+      </form>
+  </div>
+</section>
+
+
+
+<!---Formulario Suscripción--->
+
+<section class="container-fluid seccionInscripcion py-5">
+  <div class="container">
+      <h2 class="pb-5">Suscríbete para obtener nuestro boletín mensual con noticias, información y descuentos</h2>
+      <form id="inscription">
+          <!-- el name es el que se pone en el temaplate de emial.js-->
+          <input class="email" name="email" id="inscriptionTxt" type="email" placeholder="Tu email">
+          <input id="btnSendSuscription" type="button" value="Enviar">
+          <p id="mensajeAlertSuscription"></p>
+      </form>
+  </div>
+</section>
+
+
 
 <footer>
   <div class="footer-content">
@@ -300,7 +388,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
 
-
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 <!-- CONFIGURACION TESTIMONIAL JS -->
 <script>
@@ -346,10 +434,30 @@
  <script src="js/lightbox1.js "></script>
 
 
+ <!-- formulario Contact -->
+  <script src="js/formularioc.js"></script>
+
+  <!-- formulario Suscripcion -->
+  <script src="js/formularios.js"></script>
+
+  
 
 
-<!-- Bootstrap Bundle JS (incluye Popper) -->
+
+
+
+
+  <!---Sweet Alert library-->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+ <!-- Bootstrap Bundle JS (incluye Popper) -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 
 

@@ -579,6 +579,138 @@ p {
 
 /********************************************************************************/
 
+.sectionForm {
+  width: 100%; 
+  padding: 20px; 
+  background-color: #e9f7f7; 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  margin: 0 auto; 
+  font-family: "Jost", sans-serif;
+}
+
+.containerForm {
+  width: 80%;
+}
+
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.colForm {
+  flex: 1; 
+  min-width: 250px; 
+  padding: 10px; 
+}
+
+.inputBox {
+  width: 100%; 
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="number"],
+.inputBox textarea {
+  width: 100%;
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  
+}
+
+#btnSend {
+  width: 50%; 
+  max-width: 200px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  background-color: #e99034; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#btnSend:hover {
+  background-color: #06c2cc; 
+}
+
+/********************************************************************************/
+
+/********Formulario Suscripcion***********/
+
+.seccionInscripcion h2 {
+  font-family: "Jost", sans-serif;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;  
+}
+
+.email {
+  width: 70%;  
+  padding: 6px 10px;  
+  font-size: 17px;  
+  border: 2px solid #ccc;  
+  border-radius: 5px;  
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);  
+  transition: border-color 0.3s;  
+}
+
+
+.email:focus {
+  outline: none;  
+  border-color: #06c2cc; 
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2), 0 0 8px rgba(0,86,179,0.5);  
+}
+
+
+.email::placeholder {  
+  color: #999;
+  font-style: italic;
+}
+
+
+#btnSendSuscription {
+  width: 50%; 
+  max-width: 200px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  background-color: #e99034; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+
+
+#btnSendSuscription:hover {
+  background-color: #06c2cc; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   footer {
     background-color: #727272;
     color: #fff;
