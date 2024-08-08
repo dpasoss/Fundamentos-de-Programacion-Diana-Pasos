@@ -48,18 +48,6 @@
     font-family: "Jost", sans-serif;
 }
 
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2rem;
-        font-family: "Jost", sans-serif;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-        font-family: "Jost", sans-serif;
-    }
-}
-
 
 .navbar-nav .nav-item .btn {
   margin-top: 5px;
@@ -692,53 +680,117 @@ p {
 }
 
 
-/*********************************************************/
-/*contador*/
+/* Contenedor del selector de idioma */
+.language-item {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* Texto de idioma */
+.language-text {
+  font-size: 19px;
+  font-family: "Jost", sans-serif;
+  color: #fff;
+  margin: 0 5px;
+}
+
+/* Estilos del interruptor */
+.language-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px; /* Ajustado para que sea más pequeño */
+  height: 24px; /* Ajustado para que sea más pequeño */
+}
+
+.language-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #03988e;
+  transition: .4s;
+  border-radius: 24px; /* Ajustado para que coincida con la altura */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px; /* Ajustado para que sea más pequeño */
+  width: 18px; /* Ajustado para que sea más pequeño */
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #e99034;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Ajustado para que coincida con el nuevo tamaño */
+}
+
+/* Ajustes adicionales para la barra de navegación */
+.navbar-nav .language-item {
+  margin-right: 20px; /* Ajusta según sea necesario */
+}
+
+
+
+/* Estilo para la sección del contador */
 .ftco-counter {
-  background-color: #f8f9fa; 
-  color: #2c3e50;
-  padding: 50px 0; 
+  padding: 60px 0;
+  background-color: #e9f7f7;
+  font-family: "Jost", sans-serif;
 }
 
 .ftco-counter .titulos {
-  font-size: 24px; 
-  color: #e99034; 
-  margin-bottom: 30px; 
-  font-family: "Jost", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #e99034;
 }
 
-.counter-wrap {
-  margin-bottom: 20px;
+.ftco-counter .counter-wrap {
+  margin-bottom: 30px;
 }
 
-.block-18 {
-  background: white; 
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-  padding: 20px; 
-  border-radius: 10px; 
-  transition: transform 0.3s ease-in-out; 
+.ftco-counter .block-18 {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
-.block-18:hover {
-  transform: translateY(-5px); 
+.ftco-counter .block-18:hover {
+  transform: translateY(-10px);
 }
 
-.block-18 .text {
-  margin-bottom: 10px; 
+.ftco-counter .block-18 .text {
+  margin-bottom: 15px;
 }
 
-.block-18 .number {
-  font-size: 36px; 
-  font-family: "Jost", sans-serif;
+.ftco-counter .block-18 .number {
+  font-size: 3rem;
+  font-family: "Jost",sans-serif;
+  color: #06c2cc; 
 }
 
-.block-18 h5 {
-  font-size: 16px; 
-  color: #06c2cc;
-  font-family: "Jost", sans-serif;
+.ftco-counter .block-18 .text-black h5 {
+  font-size: 1.2rem;
+  color: #333;
 }
-
-
 
 
 
