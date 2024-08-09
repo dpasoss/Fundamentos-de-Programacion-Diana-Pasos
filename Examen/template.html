@@ -23,66 +23,51 @@
 <body>
   <section class="hero-section" style="background-image: url('img/smile3.jpg'); background-size: cover; background-position: center; min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-start;">
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/LOGO.png" alt="Logo Dentisalud" class="logo">
-                <span data-translate="nav_inicio">Dentisalud</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html" data-translate="nav_inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="nosotrosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="nav_nosotros">Nosotros</a>
-                        <ul class="dropdown-menu" aria-labelledby="nosotrosDropdown">
-                            <li><a class="dropdown-item" href="buscador.html" data-translate="nav_sedes">Sedes</a></li>
-                            <li><a class="dropdown-item" href="dentistas.html" data-translate="nav_dentistas">Dentistas</a></li>
-                            <li><a class="dropdown-item" href="tratamientos.html" data-translate="nav_tratamientos">Nuestros Tratamientos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="nav_servicios">Servicios</a>
-                        <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
-                            <li><a class="dropdown-item" href="cotice.html" data-translate="nav_cotice">Cotice su procedimiento</a></li>
-                            <li><a class="dropdown-item" href="tratamientos.html" data-translate="nav_tratamientos">Nuestros tratamientos</a></li>
-                            <li><a class="dropdown-item" href="modelo3d.html" data-translate="nav_modelo3d">Modelo 3D</a></li>
-                            <li><a class="dropdown-item" href="encuesta.html" data-translate="nav_encuesta">Encuesta</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="galeriaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="nav_galeria">Galería</a>
-                        <ul class="dropdown-menu" aria-labelledby="galeriaDropdown">
-                            <li><a class="dropdown-item" href="procedimientos.html" data-translate="nav_procedimientos">Procedimientos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="contactoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="nav_contacto">Contacto</a>
-                        <ul class="dropdown-menu" aria-labelledby="contactoDropdown">
-                            <li><a class="dropdown-item" href="formulario.html" data-translate="nav_formulario">Formulario</a></li>
-                            <li><a class="dropdown-item" href="inscripcion.html" data-translate="nav_inscripcion">Inscripción</a></li>
-                            <li><a class="dropdown-item" href="procedimientos.html" data-translate="nav_procedimientos">Procedimientos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn" href="#" role="button" data-translate="nav_agendar">Agendar Cita</a>
-                    </li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/LOGO.png" alt="Logo Dentisalud" class="logo">
+                    Dentisalud
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="procedimientos.html">Procedimientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="combo2.html">Cotice con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buscador.html">Sedes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="3dmodel.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Contacto</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="btn" href="#" role="button" data-translate="nav_agendar">Agendar Cita</a>
+                        </li>
 
-                    <li class="language-item">
-                      <!-- Texto de idioma -->
-                      <span class="language-text">Es</span>
-                  
-                      <!-- Clase del control language-switch -->
-                      <label class="language-switch" for="languageSwitch">
-                          <!-- Control checkbox -->
-                          <input type="checkbox" id="languageSwitch" onclick="changeLanguage()">
-                          <!-- Slider del control -->
-                          <span class="slider round"></span>
-                      </label>
+                        <li class="language-item">
+                        <!-- Texto de idioma -->
+                        <span class="language-text">Es</span>
+                    
+                        <!-- Clase del control language-switch -->
+                        <label class="language-switch" for="languageSwitch">
+                            <!-- Control checkbox -->
+                            <input type="checkbox" id="languageSwitch" onclick="changeLanguage()">
+                            <!-- Slider del control -->
+                            <span class="slider round"></span>
+                        </label>
                   
                       <!-- Texto de los 2 idiomas -->
                       <span class="language-text">En</span>

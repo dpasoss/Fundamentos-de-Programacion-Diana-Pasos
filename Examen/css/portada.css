@@ -1,0 +1,39 @@
+.banner1 {
+    position: relative;
+    width: 100%;
+    height: 900px; 
+    background-image: url("../img/banner1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .titulo1 {
+    padding-top: 200px;
+    font-weight: bolder;
+    font-size: 90px;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .titulo2 {
+    font-size: 55px;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
