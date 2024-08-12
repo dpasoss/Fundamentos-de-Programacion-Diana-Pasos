@@ -1,0 +1,249 @@
+.navbar {
+    background-color: rgba(84, 203, 208, 1); /* #54cbd0 */
+    width: 100%; /* Cubre todo el ancho de la página */
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0; /* Asegura que esté pegado a la parte superior */
+    left: 0;
+    z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
+    height: 80px; /* Ajusta la altura del navbar */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.navbar-brand {
+    color: #fff !important; 
+    font-weight: bold;
+    font-family: "Jost", sans-serif;
+    display: flex;
+    align-items: center; /* Asegura que el logo y el texto estén alineados verticalmente */
+}
+
+.navbar-brand img {
+    max-height: 60px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; 
+    margin-right: 35px; 
+    font-size: 1.5rem;
+    font-family: "Jost", sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e99034 !important;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+/* Agrega margen superior al contenido para que no quede oculto detrás del navbar */
+body {
+    padding-top: 80px; /* Igual que la altura del navbar */
+}
+
+/*******************************FIN del Nav**************************************/
+
+#select {
+    background-color: #f8f9fa; /* Fondo ligero para diferenciar la sección */
+    padding: 50px 0;
+}
+
+#select h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#select .form-label {
+    font-weight: bold;
+    color: #555;
+}
+
+#select .form-select, 
+#select .searchInput, 
+#select .btn {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+#select .form-select {
+    border: 2px solid #ced4da;
+    transition: border-color 0.3s ease;
+}
+
+#select .form-select:focus {
+    border-color: #51c8cc;
+    box-shadow: 0 0 5px rgba(62, 211, 221, 0.5);
+}
+
+#select .input-group .searchInput {
+    border: 2px solid #ced4da;
+}
+
+#select .input-group .btn-primary {
+    background-color: #51c8cc;
+    border-color: #51c8cc;
+}
+
+#select .input-group .btn-primary:hover {
+    background-color: #e99034;
+    border-color: #e99034;
+}
+
+#select .negrita {
+    font-weight: bold;
+    color: #333;
+}
+
+#select .btn-primary {
+    background-color: #51c8cc;
+    border-color: #5be1e6;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#select .btn-primary:hover {
+    background-color: #47b2b6;
+    border-color: #38898c;
+}
+
+#select .btn-secondary {
+    background-color: #e99034;
+    border-color: #e99034;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#select .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+#select .resultado {
+    color: #28a745; /* Color verde para indicar éxito */
+    font-size: 1.1rem;
+}
+
+
+/****************************************************************************/
+
+
+#form {
+    background-color: #f8f9fa; /* Fondo ligero */
+    padding: 50px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 100%; /* Ocupa todo el ancho */
+    margin: 0 auto; /* Centrar la sección */
+    font-family: 'Jost', sans-serif; /* Fuente moderna */
+}
+
+/* Alinear el Contenido del Formulario a la Izquierda */
+#form .formulario_casillas {
+    max-width: 600px; /* Ancho máximo para el formulario */
+    display: block;
+    text-align: center; /* Alinear el texto a la izquierda */
+}
+
+
+
+/* Estilos para los Elementos del Formulario */
+#form label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#form input[type="text"],
+#form input[type="date"],
+#form input[type="email"],
+#form input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 2px solid #ced4da;
+    background-color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#form input[type="text"]:focus,
+#form input[type="date"]:focus,
+#form input[type="email"]:focus,
+#form input[type="tel"]:focus {
+    border-color: #51c8cc;
+    box-shadow: 0 0 5px rgba(62, 211, 221, 0.5);
+    outline: none; /* Eliminar el borde azul por defecto */
+}
+
+/* Estilos para las Opciones de Pago */
+#moneda {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+#moneda div {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+#moneda legend {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#moneda input[type="radio"] {
+    margin-right: 8px;
+}
+
+#moneda label {
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Estilos para el Botón */
+#btn-agendar {
+    margin-top: 30px;
+    background-color: #51c8cc;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto; /* Botón de ancho ajustado */
+}
+
+#btn-agendar:hover {
+    background-color: #e99034;
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+/* Botón Secundario (opcional) */
+#btn-limpiar {
+    margin-top: 10px;
+    background-color: #e99034;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto; /* Botón de ancho ajustado */
+}
+
+#btn-limpiar:hover {
+    background-color: #cc7b2a;
+    transform: translateY(-2px);
+}

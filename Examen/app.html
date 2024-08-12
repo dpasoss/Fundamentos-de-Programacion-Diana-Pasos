@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Agende su cita</title>
+    
+    <link rel="icon" href="favicondentisalud.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> <!--Librería de iconos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/LOGO.png" alt="Logo Dentisalud" class="logo">
+                    Dentisalud
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="combo2.html">Cotice con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buscador.html">Sedes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="select" class="py-6">
+        <div class="container">
+            <h1 class="text-center mb-6">Agende su cita</h1>
+    
+            <div class="row">
+                <!-- Primera Columna: Selección de Tratamiento -->
+                <div class="col-md-6 mb-6">
+                    <label for="treatmentCombo" class="form-label">Seleccione un tratamiento</label>
+                    <select id="treatmentCombo" class="form-select">
+                        <option value="" disabled selected>Seleccione un tratamiento</option>
+                        <option value="1">Limpieza dental</option>
+                        <option value="2">Implantes dentales</option>
+                        <option value="3">Emergencias</option>
+                        <option value="4">Ortodoncia Invisalign</option>
+                        <option value="5">Carilla</option>
+                        <option value="6">Blanqueamiento</option>  
+                        <option value="7">Calzas</option> 
+                        <option value="8">Chequeo general</option> 
+                        <option value="9">Extracción de piezas</option> 
+                        <option value="10">Tratamiento periodontal</option>   
+                    </select>
+                </div>
+
+                 <!-- Segunda Selección de Dentista -->
+                <div class="col-md-6 mb-6">
+                    <label for="dr" class="form-label">Dentista de su preferencia:</label>
+                    <select id="dr" class="form-select">
+                        <option value="" disabled selected>Seleccione su Dentista</option>
+                        <option value="d1">Dra. Paula Mora</option>
+                        <option value="d2">Dr. Camilo Vargas</option>
+                        <option value="d3">Dra. Ana Gómez</option>
+                        <option value="d4">Dr. Juan Pablo Aguirre</option>
+                    </select>
+    
+                    <div class="pt-3">
+                        <p class="negrita">Monto final: <output id="txtResultadoMontoFinal">₡0</output></p>
+                    </div>
+                </div>
+            </div>
+
+
+    
+                <!-- Terceca Columna: Buscador de Clínicas -->
+                <div class="col-md-6 mb-6">
+                    <label for="searchInput" class="form-label">Buscar Clínica</label>
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="searchInput form-control" placeholder="Buscador">
+                        <button class="btn btn-primary" type="button" onclick="searchClinic()">
+                            <i class="uil uil-search"></i>
+                        </button>
+                    </div>
+                    <p id="pResult" class="resultado mt-4"></p>
+                </div>
+    
+               
+                
+    
+            <!-- Botones de Calcular y Limpiar para toda la sección -->
+            <div class="text-start mt-4">
+                <button type="button" class="btn btn-primary" onclick="calcularSeccion()">Calcular</button>
+                <button type="button" class="btn btn-secondary" onclick="limpiarSeccion()">Limpiar</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="form" class="container-fluid fondo2 text-center sct-reservaciones">
+        
+        <div class="pt-3"></div>
+
+        <form id="reserva" action="" method="post">
+
+            <div class="container formulario_casillas">
+
+                <label for="txt-nombre_completo">Nombre completo:</label>
+                <input type="text" id="txt-nombre_completo" required>
+
+                <br><br>
+
+                <label for="txt-fecha">Fecha en la que requiere la cita</label>
+                <input type="date" id="txt-fecha" required>
+
+                <br><br>
+
+                <label for="txt-email">Email:</label>
+                <input type="email" id="txt-email" required>
+
+                <br><br>
+
+                <label for="txt-telefono">Teléfono:</label>
+                <input type="tel" id="txt-telefono" required>
+
+
+            </div>
+
+            <div id="moneda">
+                <div>
+                    <legend for="rbt-moneda">Tipo de pago:</legend>
+                </div>
+                <div>
+                    <input type="radio" id="rbt-tarjeta" value="Tarjeta" name="rbt-moneda">
+                    <label for="rbt-tarjeta">Tarjeta</label>
+                </div>
+                <div>
+                    <input type="radio" id="rbt-efectivo" value="Efectivo" name="rbt-moneda">
+                    <label for="rbt-efectivo">Efectivo</label>
+                </div>
+                
+            </div>
+
+            <button type="button" id="btn-agendar">Agendar</button>
+        </form>
+
+    </section>
+    
+                    
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
