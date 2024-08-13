@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Nuestros tratamientos</title>
+    
+    <link rel="icon" href="favicondentisalud.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> <!--Librería de iconos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="css/combo1.css">
+
+</head>
+
+<body>
+
+  
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/LOGO.png" alt="Logo Dentisalud" class="logo">
+                    Dentisalud
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="procedimientos.html">Procedimientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="combo2.html">Cotice con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buscador.html">Sedes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="3dmodel.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Contacto</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!----COMBO 1-->
+
+    <section class="treatment-selection">
+        <h2>Seleccione un Tratamiento Dental</h2>
+        <p>Dentisalud ofrece diversos tratamientos que se adecuan a sus necesidades y a su presupuesto, de la mano con los mejores especialistas en cada área.</p>
+        <select id="treatmentCombo" class="form-select">
+            <option value="" disabled selected>Seleccione un tratamiento</option>
+            <option value="1">Odontología Preventiva</option>
+            <option value="2">Odontología Restauradora</option>
+            <option value="3">Emergencias Dentales</option>
+            <option value="4">Ortodoncia Invisalign</option>
+            <option value="5">Cosmética</option>
+            <option value="6">Blanqueamiento</option>  
+        </select>
+            <div class="btn-container mt-4">
+            <button class="btn btn-success" id="btn-clean">Reiniciar</button>
+            </div>
+       
+        
+        <div class="treatment-display d-flex flex-wrap justify-content-center align-items-start mt-5">
+            <div class="image-container">
+                <div id="output-img" class="img-fluid rounded"></div>
+            </div>
+            <div class="text-container ms-4">
+                <div id="output-txt" class="text-start"></div>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Todos los derechos reservados | Dentisalud </p>
+        </div>
+      </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <script src="js/combo1.js"></script>
+
+</body>
+</html>
