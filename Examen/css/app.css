@@ -43,16 +43,19 @@ body {
 
 /*******************************FIN del Nav**************************************/
 
-#select {
-    background-color: #f8f9fa; /* Fondo ligero para diferenciar la sección */
-    padding: 50px 0;
+
+
+h2.mb-4 {
+    color: #555;
+    font-size: 24px;
 }
 
 #select h1 {
     font-family: 'Jost', sans-serif;
     font-size: 2.5rem;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+    margin-top: 50px ;
 }
 
 #select .form-label {
@@ -129,10 +132,10 @@ body {
 
 
 #form {
-    background-color: #f8f9fa; /* Fondo ligero */
+    /* background-color: #f8f9fa; Fondo ligero */
     padding: 50px 20px; /* Espaciado interno */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); Sombra sutil */
     width: 100%; /* Ocupa todo el ancho */
     margin: 0 auto; /* Centrar la sección */
     font-family: 'Jost', sans-serif; /* Fuente moderna */

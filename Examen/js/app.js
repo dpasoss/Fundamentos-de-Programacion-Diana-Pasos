@@ -111,13 +111,14 @@ function limpiarSeccion() {
 function validarYMostrarReservacion() {
     const nombreCompleto = document.getElementById('txt-nombre_completo').value;
     const fechaCita = document.getElementById('txt-fecha').value;
+    const horaCita = document.getElementById('txt-hora').value;
     const email = document.getElementById('txt-email').value;
     const telefono = document.getElementById('txt-telefono').value;
     const tratamiento = document.getElementById('treatmentCombo').value;
     const dentista = document.getElementById('dr').value;
     const tipoPago = document.querySelector('input[name="rbt-moneda"]:checked');
 
-    if (!nombreCompleto || !fechaCita || !email || !telefono || !tratamiento || !dentista || !tipoPago) {
+    if (!nombreCompleto || !fechaCita || !fechaCita || !email || !telefono || !tratamiento || !dentista || !tipoPago) {
         Swal.fire({
             icon: 'warning',
             title: 'Campos faltantes',
@@ -135,6 +136,7 @@ function validarYMostrarReservacion() {
     const templateParams = {
         nombre_completo: nombreCompleto,
         fecha_cita: fechaCita,
+        hora_cita: horaCita,
         email: email,
         telefono: telefono,
         tratamiento: tratamientoText,
@@ -159,6 +161,13 @@ function validarYMostrarReservacion() {
             });
         });
 }
+
+
+function limpiarFormulario() {
+    document.getElementById('reserva').reset();
+}
+
+
 
 // Vincula la función al botón de agendar
 document.getElementById('btn-agendar').addEventListener('click', validarYMostrarReservacion);

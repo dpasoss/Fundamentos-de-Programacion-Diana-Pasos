@@ -52,60 +52,58 @@
             <h1 class="text-center mb-6">Agende su cita</h1>
     
             <div class="row">
-                <!-- Primera Columna: Selección de Tratamiento -->
-                <div class="col-md-6 mb-6">
-                    <label for="treatmentCombo" class="form-label">Seleccione un tratamiento</label>
-                    <select id="treatmentCombo" class="form-select">
-                        <option value="" disabled selected>Seleccione un tratamiento</option>
-                        <option value="1">Limpieza dental</option>
-                        <option value="2">Implantes dentales</option>
-                        <option value="3">Emergencias</option>
-                        <option value="4">Ortodoncia Invisalign</option>
-                        <option value="5">Carilla</option>
-                        <option value="6">Blanqueamiento</option>  
-                        <option value="7">Calzas</option> 
-                        <option value="8">Chequeo general</option> 
-                        <option value="9">Extracción de piezas</option> 
-                        <option value="10">Tratamiento periodontal</option>   
-                    </select>
-                </div>
 
-                 <!-- Segunda Selección de Dentista -->
-                <div class="col-md-6 mb-6">
-                    <label for="dr" class="form-label">Dentista de su preferencia:</label>
-                    <select id="dr" class="form-select">
-                        <option value="" disabled selected>Seleccione su Dentista</option>
-                        <option value="d1">Dra. Paula Mora</option>
-                        <option value="d2">Dr. Camilo Vargas</option>
-                        <option value="d3">Dra. Ana Gómez</option>
-                        <option value="d4">Dr. Juan Pablo Aguirre</option>
-                    </select>
-    
-                    <div class="pt-3">
-                        <p class="negrita">Monto final: <output id="txtResultadoMontoFinal">₡0</output></p>
+                <div class="container d-flex justify-content-center gap-5">
+
+                    <!-- Primera Columna: Buscador de Clínicas -->
+                    <div class="col-md-3 mb-3">
+                        <label for="searchInput" class="form-label">Paso 1:</label>
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="searchInput form-control" placeholder="Buscador">
+                            <button class="btn btn-primary" type="button" onclick="searchClinic()">
+                                <i class="uil uil-search"></i>
+                            </button>
+                        </div>
+                        <p id="pResult" class="resultado mt-4"></p>
+                    </div>
+                
+                    <!-- Segunda Columna: Selección de Tratamiento -->
+                    <div class="col-md-3 mb-3">
+                        <label for="treatmentCombo" class="form-label">Paso 2:</label>
+                        <select id="treatmentCombo" class="form-select">
+                            <option value="" disabled selected>Seleccione un tratamiento</option>
+                            <option value="1">Limpieza dental</option>
+                            <option value="2">Implantes dentales</option>
+                            <option value="3">Emergencias</option>
+                            <option value="4">Ortodoncia Invisalign</option>
+                            <option value="5">Carilla</option>
+                            <option value="6">Blanqueamiento</option>  
+                            <option value="7">Calzas</option> 
+                            <option value="8">Chequeo general</option> 
+                            <option value="9">Extracción de piezas</option> 
+                            <option value="10">Tratamiento periodontal</option>   
+                        </select>
+                    </div>
+                
+                    <!-- Tercera Columna: Selección de Dentista -->
+                    <div class="col-md-3 mb-3">
+                        <label for="dr" class="form-label">Paso 3:</label>
+                        <select id="dr" class="form-select">
+                            <option value="" disabled selected>Seleccione su Dentista</option>
+                            <option value="d1">Dra. Paula Mora</option>
+                            <option value="d2">Dr. Camilo Vargas</option>
+                            <option value="d3">Dra. Ana Gómez</option>
+                            <option value="d4">Dr. Juan Pablo Aguirre</option>
+                        </select>
+                        <div class="pt-3">
+                            <p class="negrita">Monto final: <output id="txtResultadoMontoFinal">₡0</output></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-
-    
-                <!-- Terceca Columna: Buscador de Clínicas -->
-                <div class="col-md-6 mb-6">
-                    <label for="searchInput" class="form-label">Buscar Clínica</label>
-                    <div class="input-group">
-                        <input type="text" id="searchInput" class="searchInput form-control" placeholder="Buscador">
-                        <button class="btn btn-primary" type="button" onclick="searchClinic()">
-                            <i class="uil uil-search"></i>
-                        </button>
-                    </div>
-                    <p id="pResult" class="resultado mt-4"></p>
-                </div>
-    
-               
                 
     
             <!-- Botones de Calcular y Limpiar para toda la sección -->
-            <div class="text-start mt-4">
+            <div class="text-center mt-4">
                 <button type="button" class="btn btn-primary" onclick="calcularSeccion()">Calcular</button>
                 <button type="button" class="btn btn-secondary" onclick="limpiarSeccion()">Limpiar</button>
             </div>
@@ -116,6 +114,8 @@
     <section id="form" class="container-fluid fondo2 text-center sct-reservaciones">
         
         <div class="pt-3"></div>
+
+        <h2 class="mb-4">Paso 4:</h2>
 
         <form id="reserva" action="" method="post">
 
@@ -128,6 +128,24 @@
 
                 <label for="txt-fecha">Fecha en la que requiere la cita</label>
                 <input type="date" id="txt-fecha" required>
+
+                <br><br>
+
+                <label for="txt-hora">Hora de la cita:</label>
+                    <select id="txt-hora" class="form-select" required>
+                        <option value="" disabled selected>Seleccione una hora</option>
+                <!-- Opciones de hora de 9:00 AM a 6:00 PM -->
+                        <option value="09:00">09:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">01:00 PM</option>
+                        <option value="14:00">02:00 PM</option>
+                        <option value="15:00">03:00 PM</option>
+                        <option value="16:00">04:00 PM</option>
+                        <option value="17:00">05:00 PM</option>
+                        <option value="18:00">06:00 PM</option>
+                    </select>
 
                 <br><br>
 
@@ -158,6 +176,8 @@
             </div>
 
             <button type="button" id="btn-agendar">Agendar</button>
+            <button type="button" id="btn-limpiar" onclick="limpiarFormulario()">Limpiar</button>
+
         </form>
 
     </section>
