@@ -79,6 +79,7 @@ function searchClinic() {
 
     const resultElement = document.getElementById('pResult');
     if (clinicFound) {
+        clinicResult = userCity.charAt(0).toUpperCase() + userCity.slice(1); // Capitaliza la ciudad ingresada
         Swal.fire({
             icon: 'success',
             title: '¡Clínica encontrada!',
@@ -144,7 +145,7 @@ function validarYMostrarReservacion() {
      <p><strong>Teléfono:</strong> ${telefono}</p>
      <p><strong>Tratamiento:</strong> ${tratamientoText}</p>
      <p><strong>Dentista:</strong> ${dentistaText}</p>
-     <p><strong>Resultado de la Búsqueda de Clínica:</strong> ${clinicResult}</p>
+     <p><strong>Sede:</strong> ${clinicResult}</p>
      <p><strong>Tipo de Pago:</strong> ${tipoPagoText}</p>
      <p><strong>Monto Final:</strong> ${montoFinal}</p>
  `;
@@ -203,4 +204,11 @@ function imprimirFactura() {
 
 
 // función al botón de agendar
-document.getElementById('btn-agendar').addEventListener('click', validarYMostrarReservacion);
+
+document.getElementById('btn-agendar').addEventListener('click', () => {
+    
+    searchClinic();
+
+   
+    validarYMostrarReservacion();
+});
