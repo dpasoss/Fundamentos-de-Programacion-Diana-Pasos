@@ -107,7 +107,7 @@ function limpiarSeccion() {
 }
 
 
-// Función para validar y mostrar la información del formulario de reservación
+// Función para la información del formulario de reservación
 function validarYMostrarReservacion() {
     const nombreCompleto = document.getElementById('txt-nombre_completo').value;
     const fechaCita = document.getElementById('txt-fecha').value;
@@ -145,7 +145,7 @@ function validarYMostrarReservacion() {
         monto_final: montoFinal
     };
 
-    // Enviar el correo electrónico con EmailJS
+    // correo electrónico con EmailJS
     emailjs.send('service_7xvmcss', 'template_80ty99h', templateParams, 'Yh5Zzyawgwf5Gilqw')
         .then((response) => {
             Swal.fire({
@@ -169,5 +169,5 @@ function limpiarFormulario() {
 
 
 
-// Vincula la función al botón de agendar
+// función al botón de agendar
 document.getElementById('btn-agendar').addEventListener('click', validarYMostrarReservacion);

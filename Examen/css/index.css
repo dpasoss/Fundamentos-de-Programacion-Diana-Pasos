@@ -15,8 +15,8 @@
 
 .navbar-nav .nav-link {
     color: #fff !important; 
-    margin-right: 35px; 
-    font-size: 1.5rem;
+    margin-right: 15px; 
+    font-size: 1.3rem;
     font-family: "Jost", sans-serif;
 }
 
@@ -51,6 +51,7 @@
 
 .navbar-nav .nav-item .btn {
   margin-top: 5px;
+  margin-bottom: 10px;
   border-color: #fff;
   color: #fff;
   margin-left: 15px; 
@@ -58,7 +59,7 @@
   border-radius: 0.25rem;
   margin-right: 40px;
   font-family: "Jost", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .navbar-nav .nav-item .btn:hover {
