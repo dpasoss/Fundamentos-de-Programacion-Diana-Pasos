@@ -70,6 +70,8 @@ function calcularSeccion() {
     document.getElementById('txtResultadoMontoFinal').textContent = `₡${montoFinal.toLocaleString()}`;
 }
 
+let clinicResult = '';
+
 function searchClinic() {
     const citiesWithClinics = ['San José', 'Escazú', 'Santa Ana', 'Lindora', 'Ciudad Colón', 'Sabana'];
     const userCity = document.getElementById('searchInput').value.trim().toLowerCase();
@@ -142,6 +144,7 @@ function validarYMostrarReservacion() {
      <p><strong>Teléfono:</strong> ${telefono}</p>
      <p><strong>Tratamiento:</strong> ${tratamientoText}</p>
      <p><strong>Dentista:</strong> ${dentistaText}</p>
+     <p><strong>Resultado de la Búsqueda de Clínica:</strong> ${clinicResult}</p>
      <p><strong>Tipo de Pago:</strong> ${tipoPagoText}</p>
      <p><strong>Monto Final:</strong> ${montoFinal}</p>
  `;
@@ -159,6 +162,7 @@ function validarYMostrarReservacion() {
         telefono: telefono,
         tratamiento: tratamientoText,
         dentista: dentistaText,
+        resultado_clinica: clinicResult,
         tipo_pago: tipoPagoText,
         monto_final: montoFinal
     };
