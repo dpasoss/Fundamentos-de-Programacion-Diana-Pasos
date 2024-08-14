@@ -1,3 +1,6 @@
+
+/* Calculos Financieros*/
+
 function calcularSeccion() {
     const tratamiento = document.getElementById('treatmentCombo').value;
     const dentista = document.getElementById('dr').value;
@@ -70,6 +73,9 @@ function calcularSeccion() {
     document.getElementById('txtResultadoMontoFinal').textContent = `₡${montoFinal.toLocaleString()}`;
 }
 
+
+/*Busqueda de datos filtrados*/
+
 let clinicResult = '';
 
 function searchClinic() {
@@ -110,7 +116,10 @@ function limpiarSeccion() {
 }
 
 
-// Función para la información del formulario de reservación
+
+/*Controles formularios programados y Reservaciones*/
+
+
 function validarYMostrarReservacion() {
     const nombreCompleto = document.getElementById('txt-nombre_completo').value;
     const fechaCita = document.getElementById('txt-fecha').value;
@@ -136,7 +145,7 @@ function validarYMostrarReservacion() {
 
     const montoFinal = document.getElementById('txtResultadoMontoFinal').textContent;
 
-     // Generar el contenido de la factura
+     // contenido de la factura
      const facturaContenido = `
      <p><strong>Nombre Completo:</strong> ${nombreCompleto}</p>
      <p><strong>Fecha de Cita:</strong> ${fechaCita}</p>
@@ -151,7 +160,7 @@ function validarYMostrarReservacion() {
  `;
 
 
-    // Insertar el contenido en la sección de la factura
+
     document.getElementById('factura-contenido').innerHTML = facturaContenido;
     document.getElementById('factura').style.display = 'block'; // Mostrar la factura
 
@@ -168,7 +177,8 @@ function validarYMostrarReservacion() {
         monto_final: montoFinal
     };
 
-    // correo electrónico con EmailJS
+    /*Resultados validados por correo*/
+
     emailjs.send('service_7xvmcss', 'template_80ty99h', templateParams, 'Yh5Zzyawgwf5Gilqw')
         .then((response) => {
             Swal.fire({
@@ -203,8 +213,9 @@ function imprimirFactura() {
 }
 
 
-// función al botón de agendar
 
+
+/*Eventos de programacion*/
 document.getElementById('btn-agendar').addEventListener('click', () => {
     
     searchClinic();
